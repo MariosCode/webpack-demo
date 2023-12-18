@@ -2,13 +2,22 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'MyFont';
+    src: url('./RubikMaps-Regular.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+
 body, html {
     margin: 0;
     padding: 0;
 }
 
 .hello {
-    color: red;
+    color: rgb(26, 26, 26);
+    font-family: 'MyFont';
+    font-size: 5rem;
     background: url('./icon.png');
     height:100vh;
   }
