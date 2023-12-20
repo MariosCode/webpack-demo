@@ -18,6 +18,4 @@ body, html {
     color: rgb(26, 26, 26);
     font-family: 'MyFont';
     font-size: 5rem;
-    /*background: url('./icon.png');*/
-    height:100vh;
   }

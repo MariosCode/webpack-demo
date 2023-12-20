@@ -4,6 +4,7 @@ import Icon from './icon.png';
 import Data from './data.xml';
 import Notes from './data.csv';
 import printMe from './print.js';
+import myName from './myName.js';
 
 function component() {
     const element = document.createElement('div');
@@ -29,5 +30,14 @@ function component() {
   
     return element;
   }
+
+  function nameDivGenerator() {
+    const element = document.createElement('div');
+
+    // use your function!
+    element.textContent = myName('Mario');
+    return element;
+  }
   
   document.body.appendChild(component());
+  document.body.appendChild(nameDivGenerator());
