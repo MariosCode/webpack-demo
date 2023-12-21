@@ -13,13 +13,14 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Development',
+      template: './src/template.html',
     }),
   ],
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
-    publicPath: '/',
+    /*publicPath: '/',*/
   },
   optimization: {
     runtimeChunk: 'single',
